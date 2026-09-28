@@ -15,7 +15,7 @@ jobs:
           username: root
           password: ${{ secrets.DROPLET_PASSWORD }}
           script: |
-            cd /opt/self-hosted-ai-starter-kit
+            cd /root/faridn8n
             git pull origin main
             docker compose up -d --build
             docker image prune -f

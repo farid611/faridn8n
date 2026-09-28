@@ -17,5 +17,5 @@ jobs:
           script: |
             cd /root/faridn8n
             git pull origin main
-            docker compose up -d --build
+            docker compose up -d --build --no-deps backend postgres qdrant n8n
             docker image prune -f
